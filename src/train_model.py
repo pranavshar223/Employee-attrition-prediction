@@ -79,9 +79,9 @@ print("\nROC-AUC Score:", roc_auc_score(y_test, y_prob))
 os.makedirs("../model", exist_ok=True)
 
 # Save model, scaler, feature names
-joblib.dump(model, "../model/attrition_model.pkl")
-joblib.dump(scaler, "../model/scaler.pkl")
-joblib.dump(X.columns.tolist(), "../model/feature_names.pkl")
-joblib.dump(rf_model, "../model/random_forest_model.pkl")
+joblib.dump(model, "model/attrition_model.pkl")
+joblib.dump(scaler, "model/scaler.pkl")
+joblib.dump(X.columns.tolist(), "model/feature_names.pkl")
+joblib.dump(rf_model, "model/random_forest_model.pkl")
 
 print("\nModel and scaler saved successfully.")
