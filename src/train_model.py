@@ -10,7 +10,7 @@ from sklearn.metrics import classification_report, roc_auc_score
 from sklearn.ensemble import RandomForestClassifier
 
 # Load dataset
-df = pd.read_csv("data/processed/processed_hr_attrition.csv")
+df = pd.read_csv("data/Processed/processed_hr_attrition.csv")
 
 print("Dataset loaded successfully")
 print("Shape:", df.shape)
